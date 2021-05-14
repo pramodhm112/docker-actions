@@ -25,3 +25,8 @@ jobs:
         run: mysql --version
       - name: Use files from Repo
         run: cat tests/a.txt
+        
+      - name: Run a multi-line script
+        run: |
+          mysql --version
+          cat tests/a.txt
