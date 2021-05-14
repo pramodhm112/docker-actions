@@ -26,7 +26,13 @@ jobs:
       - name: Use files from Repo
         run: cat tests/a.txt
         
+      - name: Make directory
+        run: mkdir files
+      - name: Change directory
+        run: cd files
+        
       - name: Run a multi-line script
         run: |
+          pwd
           mysql --version
-          cat tests/a.txt
+        # cat tests/a.txt
