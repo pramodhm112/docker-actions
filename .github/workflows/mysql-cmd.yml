@@ -23,3 +23,5 @@ jobs:
         run: echo Hello, world!
       - name: Check mysql Version
         run: mysql --version
+      - name: Use files from Repo
+        run: cat tests/a.txt
