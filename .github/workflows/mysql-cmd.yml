@@ -29,7 +29,9 @@ jobs:
       - name: Make directory
         run: mkdir files
       - name: Change directory
-        run: cd files
+        run: |
+         cd files
+         pwd
         
       - name: Run a multi-line script
         run: |
