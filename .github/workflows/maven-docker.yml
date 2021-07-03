@@ -31,4 +31,5 @@ jobs:
       - name: Maven Build Task
         run: |
           git clone "https://${{github.token}}@github.com/${{github.repository}}"
-          mvn -B package --file pom.xml
+          pwd
+        # mvn -B package
