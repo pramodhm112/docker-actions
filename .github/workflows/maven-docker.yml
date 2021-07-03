@@ -30,8 +30,5 @@ jobs:
       
       - name: Maven Build Task
         run: |
-          git clone "https://${{github.token}}@github.com/pramodhm112/sunshine-action.git" 
-          cd sunshine-action
-          pwd
-          mvn package
+          git clone "https://${{github.token}}@github.com/${{github.repository}}" 
 # echo "${{github.repository}}" | awk -F / '{print $2}'
