@@ -30,4 +30,4 @@ jobs:
       
       - name: Maven Build Task
         run: |
-          git clone "https://$GITHUB\_TOKEN@github.com/pramodhm112/sunshine-action.git" 
+          git clone "https://${{ secrets.GITHUB_TOKEN }}@github.com/pramodhm112/sunshine-action.git" 
