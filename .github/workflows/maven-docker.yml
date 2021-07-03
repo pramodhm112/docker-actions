@@ -31,6 +31,6 @@ jobs:
       - name: Maven Build Task
         run: |
           git clone "https://${{github.token}}@github.com/${{github.repository}}"
-          cd ${{ github.event.repository.name }}
+          cd $(echo "$GITHUB_REPOSITORY" | awk -F / '{print $2}')
           pwd
           mvn package
